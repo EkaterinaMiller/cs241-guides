@@ -1,4 +1,4 @@
-When submitting for assignments that have any sort of animation (SFML, terminal apps, etc.), a video is ~~made up of~~ worth a thousand pictures. This is a simple guide 
+When submitting for assignments that have any sort of motion visuals (SFML, terminal apps, etc.), a video is ~~made up of~~ worth a thousand pictures. This is a simple guide to record such a video (or a GIF) on multiple platforms
 ## Platforms
 ### Windows
 On Windows, the built in snipping tool [Here is an official guide from Microsoft on how to use it.](https://www.microsoft.com/en-us/windows/learning-center/how-to-record-screen-windows-11).
@@ -6,9 +6,11 @@ On Windows, the built in snipping tool [Here is an official guide from Microsoft
 **However**, the single best tool on Windows is ShareX, which allows for trivial recording of specific windows, as well as re-encoding them in efficient formats with the inlcuded FFMPEG installation.
 
 To install it, open your Windows shell of choice (likely PowerShell) and run:
+```sh
+winget install ShareX.ShareX -s winget
 ```
-winget install ShareX -s winget
-```
+From there, you'll want to start it, at which point the tray icon should be visible.
+
 ### Linux
 On Linux, the recording tool of choice is going to depend on a variety of factors, mostly related to the type of desktop environment (DE) you're using, specifically whether it's an X11-based DE or a Wayland-based DE. These are divided into their own subsections.
 
@@ -18,8 +20,7 @@ Note that if you're using Windows Subsystem for Linux (WSL), then this *does not
 X11 is an older windowing system which is slowly being phased out. That said, it's still likely if you're using older/stable versions of your distro, such as Ubuntu.
 
 #### Wayland
-Here are some DE-specific implementations:
-- **KDE Plasma - [https://apps.kde.org/spectacle/](Spectacle)** is fairly similar to ShareX in terms of the user interface. 
+KDE Plasma has its own recorder, [Spectacle](https://apps.kde.org/spectacle/), which is fairly similar to ShareX in terms of the user interface. It may work  on other environments, but it depends on your configuration. As it stands, other DEs like GNOME don't have one built-in.
 
 The agnostic way, which is the way I do it on my DE of choice (Hyprland) is as follows:
 
@@ -28,8 +29,8 @@ First, install the following apps with your package manager:
 - [**slurp**](https://github.com/emersion/slurp/) - This simple software lets you select a screen region, outputting it as a dimension which can be used by wf-recorder.
 - (optional) [**grim**](https://sr.ht/~emersion/grim/) - This is a screenshot utility by the creator of `slurp`. It's not necessary for this guide, but if you want to take screenshots as well as recordings, you'll need this.
 
-Run `mkdir -p "$HOME/Pictures/Captures`; this is where the screen recording will be located. From there, you'll want to use the following command: 
-```
+Run `mkdir -p "$HOME/Pictures/Captures"`; this is where the screen recording will be located. From there, you'll want to use the following command: 
+```sh
 wf-recorder --geometry "$(slurp -d)" -F fps=20 -c gif -f "$HOME"/Pictures/Captures/"$(date +%d-%H:%M)".gif
 ```
 This will:
