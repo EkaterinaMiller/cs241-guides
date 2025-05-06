@@ -49,7 +49,7 @@ and bind this command to a key, e.g. `Shift + PrintScrn`, which will
 ### MacOS
 The keybind `Shift-Command-5` opens the built-in screen capture tool.
 
-![](./05-12:15.png)
+![](./05-12-15.png)
 
 From there, select **Record Selected Portion** as shown in the screenshot, and use the selection tool to hover over your window. Then, hit **Record**. 
 
