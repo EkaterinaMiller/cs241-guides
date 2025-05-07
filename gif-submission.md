@@ -49,7 +49,7 @@ ffmpeg -i <your file>.ext -vf "fps=20,scale=480:-1:flags=lanczos" -c:v gif -q:v 
 For Wayland-based DEs, the way I do it is as follows:
 
 First, install the following apps with your package manager:
-- [**wf-recorder**](https://github.com/ammen99/wf-recorder) - This is the actual recording app, which uses FFMPEG to encode as necessary. It's quite flexible.
+- [**wf-recorder**](https://github.com/ammen99/wf-recorder) - This is the actual recording app, which uses FFMPEG to do the encoding. It's quite flexible.
 - [**slurp**](https://github.com/emersion/slurp/) - This simple software lets you select a screen region, outputting it as a dimension which can be used by wf-recorder.
 - (optional) [**grim**](https://sr.ht/~emersion/grim/) - This is a screenshot utility by the creator of `slurp`. It's not necessary for this guide, but if you want to take screenshots as well as recordings, you'll need this. Its usage is not covered in this guide; `man grim` should have all the info you'll need.
 
