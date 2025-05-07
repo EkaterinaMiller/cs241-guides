@@ -46,7 +46,7 @@ GNOME has a built-in screen recorder that can be activated with `Shift+Ctrl+Alt+
 ffmpeg -i <your file>.ext -vf "fps=20,scale=480:-1:flags=lanczos" -c:v gif -q:v 15 <your file>.gif
 ```
 
-For Wayland-based DEs, the way I do it on is as follows:
+For Wayland-based DEs, the way I do it is as follows:
 
 First, install the following apps with your package manager:
 - [**wf-recorder**](https://github.com/ammen99/wf-recorder) - This is the actual recording app, which uses FFMPEG to encode as necessary. It's quite flexible.
@@ -60,7 +60,7 @@ wf-recorder --geometry "$(slurp -d)" -F fps=20 -c gif -f "$HOME"/Pictures/Captur
 This will:
 1) Open `slurp`, letting you select a screen region
 2) Start recording the screen, continuing until it's killed directly
-3) Encode the file as a 20FPS GIF and put it in the location, with the filename as the current <day>-<hour>:<minute>
+3) Encode the file as a 20FPS GIF and put it in the location specified with `-f`, with the filename as the current `<day>-<hour>-<minute>`
 
 How you run this program is up to you; you can do it in another terminal and kill it manually with `Ctrl`-`C`, but this is tedious. Your best option is to modify it slightly:
 ```sh
