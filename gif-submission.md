@@ -25,7 +25,7 @@ Select **Stop** to finish the recording; after it is done encoding the final GIF
 ### MacOS
 The keybind `Shift-Command-5` opens the built-in screen capture tool.
 
-![](./05-12-15.png)
+![](./macosrecording.png)
 
 From there, select **Record Selected Portion** as shown in the screenshot, and use the selection tool to hover over your window. Then, hit **Record**. 
 
