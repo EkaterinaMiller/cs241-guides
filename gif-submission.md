@@ -11,16 +11,16 @@ winget install ShareX.ShareX -s winget
 ```
 From there, you'll want to start it, at which point the tray icon should be visible.
 
-![](E8E7GEyiLs.png)
+![](sharexicon.png)
 
 Right-click on this icon and select **Capture --> Screen Recording (GIF)** as shown below:
-![](image.png)
+![](sharexmenu.png)
 
 From there, the visual selection tool will appear, and will snap to whatever window you'd like; left-clicking will begin the recording. You can also hold left-click to select a custom region, after which releasing the mouse button will begin the recording.
 
-![](image-1.png)
+![](sharexrecording.png)
 
-Select **Stop** to stop the recording; after it is done encoding the final GIF, it will automatically put it in your clipboard. To find the GIF later, you can right click on the icon again and go to **History**, which will contain a list of all the media files you've recorded.
+Select **Stop** to finish the recording; after it is done encoding the final GIF, it will automatically put it in your clipboard. To find the GIF later, you can right click on the icon again and go to **History**, which will contain a list of all the media files you've recorded.
 
 ### MacOS
 The keybind `Shift-Command-5` opens the built-in screen capture tool.
