@@ -34,11 +34,11 @@ Once you are finished recording, you can edit the final file, or it will save to
 [See the official Apple guide](https://support.apple.com/en-us/102618), or see the linked video to see a visual representation: [spill the goods - *How to Screen Record on a Mac*](https://www.youtube.com/watch?v=LP7FstUL_Uo) (screenshot source is from this video.)
 
 ### Linux
-On Linux, the recording tool of choice is going to depend on a variety of factors, mostly related to the type of desktop environment (DE) you're using, specifically whether it's an X11-based DE or a Wayland-based DE. These are divided into their own subsections.
+On Linux, the recording tool of choice is going to depend on a variety of factors, mostly related to the type of desktop environment (DE) you're using, as well as whether it's X11-based or Wayland-based.
 
 Note that if you're using Windows Subsystem for Linux (WSL), then this *does not* apply to you; you would still use ShareX (or another software) to do the recording.
 
-KDE Plasma has its own recorder, [Spectacle](https://apps.kde.org/spectacle/), which is fairly similar to ShareX in terms of the user interface. It should be available for both the X11 and Wayland versions. It may even work for other environments, but it depends on your configuration. 
+KDE Plasma has its own recorder, [Spectacle](https://apps.kde.org/spectacle/), which is fairly similar to ShareX in terms of the user interface. It should be available for both the X11 and Wayland versions. It may even work for other desktop environments, but it depends on your configuration. 
 
 GNOME has a built-in screen recorder that can be activated with `Shift+Ctrl+Alt+R`, but it's not very granular; it can only record the entire screen, and you'll need to re-encode as a GIF (with FFMPEG, which may or may not be pre-installed):
 
@@ -51,7 +51,7 @@ For Wayland-based DEs, the way I do it is as follows:
 First, install the following apps with your package manager:
 - [**wf-recorder**](https://github.com/ammen99/wf-recorder) - This is the actual recording app, which uses FFMPEG to encode as necessary. It's quite flexible.
 - [**slurp**](https://github.com/emersion/slurp/) - This simple software lets you select a screen region, outputting it as a dimension which can be used by wf-recorder.
-- (optional) [**grim**](https://sr.ht/~emersion/grim/) - This is a screenshot utility by the creator of `slurp`. It's not necessary for this guide, but if you want to take screenshots as well as recordings, you'll need this.
+- (optional) [**grim**](https://sr.ht/~emersion/grim/) - This is a screenshot utility by the creator of `slurp`. It's not necessary for this guide, but if you want to take screenshots as well as recordings, you'll need this. Its usage is not covered in this guide; `man grim` should have all the info you'll need.
 
 Run `mkdir -p "$HOME/Videos"`; this is where the screen recording will be located. From there, you'll want to use the following command: 
 ```sh
