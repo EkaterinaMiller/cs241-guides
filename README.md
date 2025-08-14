@@ -1,9 +1,9 @@
-When submitting for assignments that have any sort of motion visuals (SFML, terminal apps, etc.), a video is ~~made up of~~ worth a thousand pictures. This is a simple guide to record such a video (or a GIF) on multiple platforms.
+When submitting for assignments that have any sort of motion visuals (SFML, terminal apps, etc.), a video is worth a thousand pictures. This is a simple guide to record such a video (or a GIF) on multiple platforms.
 ## Platforms
 ### Windows
-On Windows, the built in snipping tool can be used to record a window; [here is an official guide from Microsoft on how to use it.](https://www.microsoft.com/en-us/windows/learning-center/how-to-record-screen-windows-11).
+On Windows, the built-in snipping tool can be used to record a window; [here is an official guide from Microsoft on how to use it.](https://www.microsoft.com/en-us/windows/learning-center/how-to-record-screen-windows-11).
 
-**However**, I find this tool to be cumbersome and imprecise. The single best tool on Windows is ShareX, which allows for trivial recording of specific windows, as well as re-encoding them in efficient formats with the inlcuded FFMPEG installation.
+**However**, I find this tool to be cumbersome and imprecise. The single best tool on Windows is ShareX, which allows for trivial recording of specific windows, as well as re-encoding them in efficient formats with the included FFMPEG installation.
 
 To install it, open your Windows shell of choice (likely PowerShell) and run:
 ```sh
