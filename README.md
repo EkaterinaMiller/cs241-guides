@@ -1,3 +1,4 @@
+# Creating a GIF for assignment submission
 When submitting for assignments that have any sort of motion visuals (SFML, terminal apps, etc.), a video is worth a thousand pictures. This is a simple guide to record such a video (or a GIF) on multiple platforms.
 ## Platforms
 ### Windows
